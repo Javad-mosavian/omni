@@ -1,0 +1,25 @@
+{
+  "name": "omni",
+  "version": "1.0.0",
+  "description": "a movies and series template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tail": "npx @tailwindcss/cli -i ./src/input.css -o ./public/assets/styles/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javad-mosavian/omni.git"
+  },
+  "author": "javad-mosavian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Javad-mosavian/omni/issues"
+  },
+  "homepage": "https://github.com/Javad-mosavian/omni#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "aos": "^2.3.4",
+    "tailwindcss": "^4.1.7"
+  }
+}
