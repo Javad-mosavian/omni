@@ -1,6 +1,8 @@
 @import "tailwindcss";
-
 @custom-variant dark (&:where(.dark, .dark *));
+
+
+/* TODO add fonts */
 
 @theme {
     --color-dark: #030A1B;
@@ -28,12 +30,16 @@
     }
 
     .slide-content {
-        @apply z-10 h-2/5 flex flex-col justify-center items-start px-5 md:px-12 lg:px-20 space-y-6 bottom-0 absolute w-full;
+        @apply z-10 h-2/5 flex flex-col justify-end items-start bottom-0 absolute w-full pb-10 px-5 md:px-0;
         max-width: 100%;
     }
 
+    .slide-content-align {
+        @apply lg:container mx-auto flex flex-col justify-center items-start space-y-6
+    }
+
     .slide-content h2 {
-        @apply text-4xl font-bold capitalize;
+        @apply text-4xl md:text-5xl font-bold capitalize;
     }
 
     .slide-content p {
