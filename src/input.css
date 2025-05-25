@@ -18,6 +18,10 @@
         @apply cursor-pointer
     }
 
+    section {
+        @apply my-10
+    }
+
 }
 
 @layer components {
@@ -26,7 +30,7 @@
     }
 
     .swiper-slide img {
-        @apply absolute inset-0 w-full h-full object-cover opacity-50;
+        @apply absolute inset-0 w-full h-full object-cover opacity-70;
     }
 
     .slide-content {
@@ -35,7 +39,7 @@
     }
 
     .slide-content-align {
-        @apply lg:container mx-auto flex flex-col justify-center items-start space-y-6
+        @apply container mx-auto flex flex-col justify-center items-start space-y-6
     }
 
     .slide-content h2 {
@@ -61,8 +65,50 @@
     .slide-overlay {
         @apply w-full h-full absolute top-0 left-0 -z-10 bg-gradient-to-t from-dark via-dark via-dark via-dark via-dark to-transparent;
     }
+
+    .slider-card {
+        @apply flex gap-10 flex-row overflow-x-auto px-5 overflow-hidden w-full
+    }
+
+    .swiper-wrapper {
+        @apply w-max flex;
+    }
+
+    .slide-card {
+        @apply h-96 w-64 relative rounded-[10px] overflow-hidden flex-shrink-0
+    }
+
+    .slide-card img {
+        @apply object-cover h-full w-full shadow-2xl shadow-white
+    }
+
+    .slide-plus-parent {
+        @apply absolute top-0 left-0 rounded-br-[10px] rounded-tr-sm rounded-bl-sm ring-4 ring-dark size-14 z-20
+    }
+
+    .slide-plus-btn {
+        @apply absolute top-0 left-0 rounded-[10px] ring-4 ring-dark bg-white/10 backdrop-blur-[2px] box-border size-14 text-3xl font-bold z-20
+    }
+
+    .slide-plus-before {
+        @apply before:bg-transparent before:w-[1.125rem] before:h-[1.125rem] before:content-[''] before:absolute before:left-[0] before:bottom-[-1.375rem] before:rounded-tl-[10px] before:[box-shadow:-4px_-4px_#030A1B]
+    }
+
+    .slide-plus-after {
+        @apply after:bg-transparent after:w-[1.125rem] after:h-[1.125rem] after:content-[''] after:absolute after:right-[-1.375rem] after:top-0 after:rounded-tl-[10px] after:[box-shadow:-4px_-4px_#030A1B]
+    }
 }
 
 .swiper-pagination-bullet {
     background: #FFF;
+}
+
+.border-box {
+    box-sizing: border-box !important;
+
+}
+
+.swiper-slide-card {
+    height: 384px !important;
+    width: 256px !important;
 }
