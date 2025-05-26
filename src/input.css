@@ -22,6 +22,22 @@
         @apply my-10
     }
 
+    i.m {
+        @apply mx-3
+    }
+
+    img {
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+    }
+
+    button {
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+    }
+
 }
 
 @layer components {
