@@ -19,7 +19,7 @@
     }
 
     section {
-        @apply my-10
+        @apply my-10 relative
     }
 
     i.m {
@@ -112,6 +112,17 @@
 
     .slide-plus-after {
         @apply after:bg-transparent after:w-[1.125rem] after:h-[1.125rem] after:content-[''] after:absolute after:right-[-1.375rem] after:top-0 after:rounded-tl-[10px] after:[box-shadow:-4px_-4px_#030A1B]
+    }
+
+
+    .golden-globe {
+        @apply h-56 md:h-64 lg:h-96 xl:h-[60svh] bg-[#DAA521] w-full my-16 relative;
+        @apply before:content-[''] before:w-full before:h-1/6 before:absolute before:-top-1/12 before:backdrop-blur-sm before:left-0;
+        @apply after:content-[''] after:w-full after:h-1/6 after:absolute after:-bottom-1/12 after:backdrop-blur-sm after:left-0;
+    }
+
+    .golden-globe-movies {
+        @apply -left-1/12 h-[120%] -top-[10%] w-2/6 z-10 absolute bg-gradient-to-r from-[#DAA521] via-[#daa621] via-[#daa621] to-[#daa62136] blur-[5px]
     }
 }
 
